@@ -1,0 +1,40 @@
+/* ------MAIN------- */
+.container-main {
+    background-color: rgb(35, 35, 35);
+    min-height: 200px;
+    border-top: 5px solid #151515;
+
+    h1 {
+        color: rgb(195, 195, 195);
+        text-align: left;
+        text-decoration: underline 1px;
+        margin-left: 15%;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    section p {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    #cards {
+        padding-bottom: 60px;
+        max-width: 70%;
+        margin: auto;
+        .card{
+            background-color: rgb(35, 35, 35);
+            border: 1px solid white;
+            width: 30%;
+            transition: 0.3s;
+            &:hover{
+                box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+            }
+        }
+    }
+
+}
