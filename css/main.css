@@ -26,17 +26,50 @@ section .d-flex {
   right: 0;
 }
 
+.boton-nav {
+  position: relative;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  color: white;
+  background: rgb(65, 65, 65);
+}
+.boton-nav a {
+  text-decoration: none;
+}
+.boton-nav:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.boton-nav:hover a {
+  color: white;
+}
+.boton-nav:before, .boton-nav:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(15, 15, 15);
+  box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 400ms ease all;
+}
+.boton-nav:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.boton-nav:hover:before, .boton-nav:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
 .bg-propio {
   background-color: rgb(65, 65, 65);
-}
-
-.nav-item :hover {
-  color: gray;
-}
-
-nav ul li a:hover {
-  background-color: rgb(205, 205, 205);
-  color: gray;
 }
 
 .carousel-item {
@@ -49,7 +82,7 @@ nav ul li a:hover {
   min-height: 200px;
   border-top: 5px solid #151515;
 }
-.container-main h1 {
+.container-main .h1 {
   color: rgb(195, 195, 195);
   text-align: left;
   text-decoration: underline 1px;
