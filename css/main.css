@@ -82,7 +82,7 @@ section .d-flex {
   min-height: 200px;
   border-top: 5px solid #151515;
 }
-.container-main .h1 {
+.container-main h1 {
   color: rgb(195, 195, 195);
   text-align: left;
   text-decoration: underline 1px;
