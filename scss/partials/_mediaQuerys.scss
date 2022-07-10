@@ -6,7 +6,7 @@
         width: 80%;
         margin: 30px auto;
 
-        .container-main {
+        .container-index {
             section {
                 p {
                     font-size: 20px;
@@ -17,11 +17,27 @@
                 }
             }
 
-            #cards .card {
-                margin: 10px;
-                width: 45%;
+        }
+
+        // Querys TALLERES-----
+        .container-taller{
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
+                }
+            }
+
+            .images-taller{
+                min-width: 100%;
+                .foto-taller{
+                    min-width: 45%;
+                    margin-bottom: 15px;
+                }
             }
         }
+
     }
 
 }
@@ -31,7 +47,7 @@
     body {
         width: 80%;
 
-        .container-main {
+        .container-index {
             h1 {
                 font-size: 25px;
             }
@@ -39,20 +55,23 @@
             section p {
                 font-size: 15px;
             }
+        }
 
-            #cards {
-                min-width: 90%;
-
-                .card {
-                    margin: 10px;
-                    width: 45% !important;
+        // Querys TALLERES-----
+        .container-taller{
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
                 }
             }
 
-            #cards-taller {
-                .card {
-                    margin: 10px;
-                    width: 44%;
+            .images-taller{
+                min-width: 100%;
+                .foto-taller{
+                    min-width: 70%;
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -69,20 +88,30 @@
         #img-logo {
             min-height: 200px;
         }
-
-        #cards {
-            width: 90%;
-        }
-
-        #cards-taller {
-            .card {
-                margin: 10px;
-                width: 70% !important;
+        // Querys INDEX-----
+        .container-index {
+            .gallery {
+                margin-left: 45px !important;
             }
         }
 
-        .gallery{
-            margin-left: 45px !important;
+        // Querys TALLERES-----
+        .container-taller{
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
+                }
+            }
+
+            .images-taller{
+                min-width: 100%;
+                .foto-taller{
+                    min-width: 70%;
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 

@@ -23,6 +23,7 @@
     .images-taller{
         display: flex;
         max-width: 90%;
+        flex-wrap: wrap;
         margin:40px auto;
         justify-content: space-around;
         a{

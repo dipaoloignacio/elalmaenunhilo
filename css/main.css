@@ -288,6 +288,7 @@ section .d-flex {
 .container-taller .images-taller {
   display: flex;
   max-width: 90%;
+  flex-wrap: wrap;
   margin: 40px auto;
   justify-content: space-around;
 }
@@ -416,37 +417,46 @@ a {
     width: 80%;
     margin: 30px auto;
   }
-  body .container-main section p {
+  body .container-index section p {
     font-size: 20px;
   }
-  body .container-main section h1 {
+  body .container-index section h1 {
     font-size: 30px;
   }
-  body .container-main #cards .card {
-    margin: 10px;
-    width: 45%;
+  body .container-taller .video-taller iframe {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+  body .container-taller .images-taller {
+    min-width: 100%;
+  }
+  body .container-taller .images-taller .foto-taller {
+    min-width: 45%;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 768px) {
   body {
     width: 80%;
   }
-  body .container-main h1 {
+  body .container-index h1 {
     font-size: 25px;
   }
-  body .container-main section p {
+  body .container-index section p {
     font-size: 15px;
   }
-  body .container-main #cards {
-    min-width: 90%;
+  body .container-taller .video-taller iframe {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
   }
-  body .container-main #cards .card {
-    margin: 10px;
-    width: 45% !important;
+  body .container-taller .images-taller {
+    min-width: 100%;
   }
-  body .container-main #cards-taller .card {
-    margin: 10px;
-    width: 44%;
+  body .container-taller .images-taller .foto-taller {
+    min-width: 70%;
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -457,15 +467,20 @@ a {
   body #img-logo {
     min-height: 200px;
   }
-  body #cards {
-    width: 90%;
-  }
-  body #cards-taller .card {
-    margin: 10px;
-    width: 70% !important;
-  }
-  body .gallery {
+  body .container-index .gallery {
     margin-left: 45px !important;
+  }
+  body .container-taller .video-taller iframe {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+  body .container-taller .images-taller {
+    min-width: 100%;
+  }
+  body .container-taller .images-taller .foto-taller {
+    min-width: 70%;
+    margin-bottom: 15px;
   }
 }
 
