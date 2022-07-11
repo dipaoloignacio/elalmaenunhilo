@@ -20,7 +20,7 @@
         }
 
         // Querys TALLERES-----
-        .container-taller{
+        .container-taller {
             .video-taller {
                 iframe {
                     width: 90%;
@@ -29,15 +29,32 @@
                 }
             }
 
-            .images-taller{
+            .images-taller {
                 min-width: 100%;
-                .foto-taller{
+
+                .foto-taller {
                     min-width: 45%;
                     margin-bottom: 15px;
                 }
             }
         }
 
+        .taller3{
+            .btn{
+                width: 70px;
+            }
+            img{
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+
+        //querys ESPECTACULOS -----
+        .video-espectaculos {
+            min-width: 90%;
+            margin-left: 5%;
+            height: 325px;
+        }
     }
 
 }
@@ -58,7 +75,7 @@
         }
 
         // Querys TALLERES-----
-        .container-taller{
+        .container-taller {
             .video-taller {
                 iframe {
                     width: 90%;
@@ -67,12 +84,23 @@
                 }
             }
 
-            .images-taller{
+            .images-taller {
                 min-width: 100%;
-                .foto-taller{
+
+                .foto-taller {
                     min-width: 70%;
                     margin-bottom: 15px;
                 }
+            }
+        }
+
+        .taller3{
+            .btn{
+                width: 50px;
+            }
+            img{
+                width: 80%;
+                margin-left: 10%;
             }
         }
     }
@@ -88,6 +116,7 @@
         #img-logo {
             min-height: 200px;
         }
+
         // Querys INDEX-----
         .container-index {
             .gallery {
@@ -96,7 +125,7 @@
         }
 
         // Querys TALLERES-----
-        .container-taller{
+        .container-taller {
             .video-taller {
                 iframe {
                     width: 90%;
@@ -105,14 +134,16 @@
                 }
             }
 
-            .images-taller{
+            .images-taller {
                 min-width: 100%;
-                .foto-taller{
+
+                .foto-taller {
                     min-width: 70%;
                     margin-bottom: 15px;
                 }
             }
         }
+
     }
 
 }

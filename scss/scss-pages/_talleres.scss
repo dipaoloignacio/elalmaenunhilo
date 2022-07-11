@@ -5,11 +5,13 @@
 
 .container-taller {
     background-color: $color-background-container;
+
     h1 {
-        color:rgb(195, 195, 195);
+        color: rgb(195, 195, 195);
         text-align: center;
         padding: 20px;
     }
+
     .video-taller {
         margin: auto;
 
@@ -20,22 +22,26 @@
         }
     }
 
-    .images-taller{
+    .images-taller {
         display: flex;
         max-width: 90%;
         flex-wrap: wrap;
-        margin:40px auto;
+        margin: 40px auto;
         justify-content: space-around;
-        a{
+
+        a {
             max-width: 30%;
             transition: 0.3s;
-            button{
+
+            button {
                 display: none;
             }
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
                 box-shadow: 0 0 6px 2px white;
-                button{
+
+                button {
                     position: absolute;
                     bottom: -20px;
                     left: 10px;
@@ -45,4 +51,24 @@
         }
     }
 
+
+}
+
+.taller3 {
+    .btn{
+        height: 50px;
+        width: 200px;
+        margin-left: 5%;
+        margin-top: 10px;
+        border: solid 2px;
+        
+        i {
+            font-size: 30px;
+        }
+    }
+
+    img{
+        width: 50%;
+        margin-left: 25%;
+    }
 }

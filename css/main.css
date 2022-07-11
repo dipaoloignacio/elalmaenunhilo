@@ -227,39 +227,60 @@ section .d-flex {
   max-width: 60%;
 }
 
-.obras {
-  max-width: 90%;
-  margin: auto;
+.container-espectaculos {
+  background-color: rgb(35, 35, 35);
 }
-
-.obras h3 {
+.container-espectaculos h1 {
+  padding-top: 15px;
   color: white;
   text-align: center;
 }
-
-.obras p {
-  color: white;
+.container-espectaculos p {
+  color: aliceblue;
   text-align: center;
-  margin-top: 10px;
+  font-size: 1.1rem;
 }
-
-.obras img {
-  max-width: 50%;
-  height: auto;
-  margin-left: 25%;
-  margin-top: 15px;
-}
-
-.media {
+.container-espectaculos .videos {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 45px;
+  padding-bottom: 20px;
 }
-
-.obras iframe {
-  align-self: center;
-  margin-top: 15px;
-  max-width: 80%;
-  margin-bottom: 20px;
+.container-espectaculos .videos .lambe, .container-espectaculos .videos .marioneta {
+  border: solid 2px rgb(65, 65, 65);
+  max-width: 45%;
+}
+.container-espectaculos .videos .lambe a, .container-espectaculos .videos .marioneta a {
+  text-decoration: none;
+}
+.container-espectaculos .videos .lambe p, .container-espectaculos .videos .marioneta p {
+  color: white;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 70%;
+}
+.container-espectaculos .videos .lambe .btn, .container-espectaculos .videos .marioneta .btn {
+  bottom: 0;
+  margin: 10px;
+}
+.container-espectaculos .videos .marioneta a {
+  text-decoration: none;
+}
+.container-espectaculos .videos .marioneta p {
+  color: white;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: auto;
+  max-width: 70%;
+}
+.container-espectaculos .videos h3 {
+  color: white;
+  text-align: center;
+}
+.container-espectaculos .videos .video-espectaculos {
+  width: 100%;
+  height: 500px;
 }
 
 .banner-taller {
@@ -306,6 +327,21 @@ section .d-flex {
   bottom: -20px;
   left: 10px;
   display: block;
+}
+
+.taller3 .btn, .taller3 .container-espectaculos .videos .marioneta .btn, .container-espectaculos .videos .marioneta .taller3 .btn {
+  height: 50px;
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 10px;
+  border: solid 2px;
+}
+.taller3 .btn i, .taller3 .container-espectaculos .videos .marioneta .btn i, .container-espectaculos .videos .marioneta .taller3 .btn i {
+  font-size: 30px;
+}
+.taller3 img {
+  width: 50%;
+  margin-left: 25%;
 }
 
 .redes {
@@ -433,6 +469,18 @@ a {
     min-width: 45%;
     margin-bottom: 15px;
   }
+  body .taller3 .btn, body .taller3 .container-espectaculos .videos .marioneta .btn, .container-espectaculos .videos .marioneta body .taller3 .btn {
+    width: 70px;
+  }
+  body .taller3 img {
+    width: 70%;
+    margin-left: 15%;
+  }
+  body .video-espectaculos {
+    min-width: 90%;
+    margin-left: 5%;
+    height: 325px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -455,6 +503,13 @@ a {
   body .container-taller .images-taller .foto-taller {
     min-width: 70%;
     margin-bottom: 15px;
+  }
+  body .taller3 .btn, body .taller3 .container-espectaculos .videos .marioneta .btn, .container-espectaculos .videos .marioneta body .taller3 .btn {
+    width: 50px;
+  }
+  body .taller3 img {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 @media screen and (max-width: 500px) {

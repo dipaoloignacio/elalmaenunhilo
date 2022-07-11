@@ -1,31 +1,74 @@
-.obras{
-    max-width: 90%;
-    margin: auto;
-}
+.container-espectaculos {
+    background-color: $color-background-container;
 
-.obras h3{
-    color: white;
-    text-align: center;
-}
-.obras p{
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-}
-.obras img{
-    max-width: 50%;
-    height: auto;
-    margin-left: 25%;
-    margin-top: 15px;
-}
+    h1 {
+        padding-top: 15px;
+        color: white;
+        text-align: center;
+    }
+    p{
+        color: aliceblue;
+        text-align: center;
+        font-size: 1.1rem;
+    }
 
-.media{
-    display: flex;
-    flex-direction: column;
-}
-.obras iframe{
-    align-self: center;
-    margin-top: 15px;
-    max-width: 80%;
-    margin-bottom: 20px;
+    .videos {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 45px;
+        padding-bottom: 20px;
+        .lambe {
+            border: solid 2px $color-background-nav;
+            max-width: 45%;
+            
+            a {
+                text-decoration: none;
+            }
+
+            p {
+                color: white;
+                text-align: left;
+                font-size: 1.2rem;
+                margin: auto;
+                max-width: 70%;
+            }
+
+            .btn {
+                bottom: 0;
+                margin: 10px;
+            }
+        }
+
+        .marioneta {
+            @extend .lambe;
+
+            a {
+                text-decoration: none;
+            }
+
+            p {
+                color: white;
+                text-align: left;
+                font-size: 1.2rem;
+                margin: auto;
+                max-width: 70%;
+            }
+
+            .btn {
+                @extend .btn;
+
+            }
+        }
+
+        h3 {
+            color: white;
+            text-align: center;
+        }
+
+        .video-espectaculos {
+            width: 100%;
+            height: 500px;
+        }
+    }
+
 }
