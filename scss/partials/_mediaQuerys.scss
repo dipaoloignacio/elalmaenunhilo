@@ -16,7 +16,6 @@
                     font-size: 30px;
                 }
             }
-
         }
 
         // Querys TALLERES-----
@@ -39,21 +38,35 @@
             }
         }
 
-        .taller3{
-            .btn{
+        .taller3 {
+            .btn {
                 width: 70px;
             }
-            img{
+
+            img {
                 width: 70%;
                 margin-left: 15%;
             }
         }
 
         //querys ESPECTACULOS -----
-        .video-espectaculos {
-            min-width: 90%;
-            margin-left: 5%;
-            height: 325px;
+        .videos {
+            .lambe {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .marioneta {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .video-espectaculos {
+                min-width: 90%;
+                max-height: 300px;
+            }
         }
     }
 
@@ -94,13 +107,39 @@
             }
         }
 
-        .taller3{
-            .btn{
+        .taller3 {
+            .btn {
                 width: 50px;
             }
-            img{
+
+            img {
                 width: 80%;
                 margin-left: 10%;
+            }
+        }
+
+        //querys ESPECTACULOS -----
+        .videos {
+            .lambe {
+                min-width: 90%;
+                margin: 10px;
+                .text-espect {
+                    font-size: 1rem;
+                }
+                .btn1{
+                    position: relative !important;
+                }
+            }
+
+            .marioneta {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .video-espectaculos {
+                min-width: 90%;
+                max-height: 300px;
             }
         }
     }
@@ -120,7 +159,7 @@
         // Querys INDEX-----
         .container-index {
             .gallery {
-                margin-left: 45px !important;
+                margin-left: 8% !important;
             }
         }
 
