@@ -39,9 +39,16 @@
         }
 
         .lambe {
-            border: solid 2px $color-background-nav;
+            border: solid 1px;
+            border-radius: 5px;
             background-color: $color-background-container;
             max-width: 45%;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 5px 1px white;
+            }
 
             a {
                 text-decoration: none;
@@ -69,5 +76,78 @@
 
 
     }
+}
 
+.lambe-lambe {
+    background-color: $color-background-container;
+    color: white;
+
+    .btn {
+        margin: 20px;
+        i {
+            font-size: 35px;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    a {
+        width: 100px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    article {
+        border-top: 1px solid white;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .carrusel-del-viejo-matias {
+        p {
+            max-width: 50%;
+            margin: auto;
+        }
+        a {
+            width: 35%;
+            margin-left: 32.5%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .milonga {
+        a {
+            width: 35%;
+            margin-left: 32.5%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 50%;
+            margin: auto;
+        }
+    }
+}
+
+.pagina-lambe {
+    .btn {
+        height: 50px;
+        width: 200px;
+        margin-left: 5%;
+        margin-top: 10px;
+        border: solid 2px;
+
+        .fa-solid {
+            font-size: 35px;
+        }
+    }
+
+    img {
+        width: 50%;
+        margin-left: 25%;
+    }
 }

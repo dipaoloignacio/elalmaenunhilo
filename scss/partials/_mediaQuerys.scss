@@ -68,6 +68,42 @@
                 max-height: 300px;
             }
         }
+
+        .pagina-lambe {
+            .btn {
+                width: 70px;
+            }
+
+            img {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+
+        .lambe-lambe {
+            .milonga {
+                p{
+                    min-width: 80%;
+                }
+                a {
+                    min-width: 70%;
+                    margin-left: 15%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .carrusel-del-viejo-matias {
+                p{
+                    min-width: 80%;
+                }
+                a {
+                    min-width: 70%;
+                    margin-left: 15%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
     }
 
 }
@@ -123,10 +159,12 @@
             .lambe {
                 min-width: 90%;
                 margin: 10px;
+
                 .text-espect {
                     font-size: 1rem;
                 }
-                .btn1{
+
+                .btn1 {
                     position: relative !important;
                 }
             }
@@ -142,8 +180,33 @@
                 max-height: 300px;
             }
         }
+
+        .pagina-lambe {
+            .btn {
+                width: 50px;
+            }
+
+            img {
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+
     }
 
+
+    //Querys company---
+    .container-company {
+
+        .logo-movil {
+            min-width: 70%;
+            margin: auto;
+        }
+
+        .contactarme {
+            min-width: 70%;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -185,4 +248,16 @@
 
     }
 
+    //Querys company---
+    .container-company {
+
+        .logo-movil {
+            min-width: 90%;
+            margin: auto;
+        }
+
+        .contactarme {
+            min-width: 70%;
+        }
+    }
 }
