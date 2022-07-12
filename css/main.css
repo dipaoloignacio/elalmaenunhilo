@@ -335,9 +335,9 @@ section .d-flex {
   text-decoration: none;
 }
 .container-espectaculos .videos .lambe .btn1, .container-espectaculos .videos .marioneta .btn1 {
+  position: absolute;
   bottom: 0;
   margin: 10px;
-  position: absolute;
 }
 .container-espectaculos .videos .marioneta a {
   text-decoration: none;
@@ -363,13 +363,22 @@ section .d-flex {
 .lambe-lambe a {
   width: 100px;
 }
-.lambe-lambe h3 {
-  text-align: center;
-}
 .lambe-lambe article {
   border-top: 1px solid white;
   margin-bottom: 30px;
   padding: 20px;
+}
+.lambe-lambe article h3 {
+  text-align: center;
+}
+.lambe-lambe .bellos-y-bestias p {
+  max-width: 50%;
+  margin: auto;
+}
+.lambe-lambe .bellos-y-bestias a {
+  width: 35%;
+  margin-left: 32.5%;
+  margin-bottom: 20px;
 }
 .lambe-lambe .carrusel-del-viejo-matias p {
   max-width: 50%;
@@ -380,14 +389,14 @@ section .d-flex {
   margin-left: 32.5%;
   margin-bottom: 20px;
 }
+.lambe-lambe .milonga p {
+  max-width: 50%;
+  margin: auto;
+}
 .lambe-lambe .milonga a {
   width: 35%;
   margin-left: 32.5%;
   margin-bottom: 20px;
-}
-.lambe-lambe .milonga p {
-  max-width: 50%;
-  margin: auto;
 }
 
 .pagina-lambe .btn {
@@ -397,8 +406,8 @@ section .d-flex {
   margin-top: 10px;
   border: solid 2px;
 }
-.pagina-lambe .btn .fa-solid {
-  font-size: 35px;
+.pagina-lambe .btn i {
+  font-size: 30px;
 }
 .pagina-lambe img {
   width: 50%;

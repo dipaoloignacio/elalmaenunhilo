@@ -55,9 +55,9 @@
             }
 
             .btn1 {
+                position: absolute;
                 bottom: 0;
                 margin: 10px;
-                position: absolute;
             }
         }
 
@@ -77,7 +77,7 @@
 
     }
 }
-
+//Estilos cuando entras a pages/espectaculos-pages/lambelambe.html.
 .lambe-lambe {
     background-color: $color-background-container;
     color: white;
@@ -97,53 +97,44 @@
         width: 100px;
     }
 
-    h3 {
-        text-align: center;
-    }
-
+    
     article {
         border-top: 1px solid white;
         margin-bottom: 30px;
         padding: 20px;
+        h3 {
+            text-align: center;
+        }
     }
 
+
+    @mixin obras-lambe {
+        p {
+            max-width: 50%;
+            margin: auto;
+        }
+        a {
+            width: 35%;
+            margin-left: 32.5%;
+            margin-bottom: 20px;
+        }
+    }
+
+    .bellos-y-bestias{
+        @include obras-lambe();
+    }
     .carrusel-del-viejo-matias {
-        p {
-            max-width: 50%;
-            margin: auto;
-        }
-        a {
-            width: 35%;
-            margin-left: 32.5%;
-            margin-bottom: 20px;
-        }
+        @include obras-lambe();
     }
-
     .milonga {
-        a {
-            width: 35%;
-            margin-left: 32.5%;
-            margin-bottom: 20px;
-        }
-
-        p {
-            max-width: 50%;
-            margin: auto;
-        }
+        @include obras-lambe();
     }
 }
 
+//Se comparten los estilos de cada obra de Lambe Lambe ruta: pages/espectaculos-pages/lambe-lame-pages.
 .pagina-lambe {
     .btn {
-        height: 50px;
-        width: 200px;
-        margin-left: 5%;
-        margin-top: 10px;
-        border: solid 2px;
-
-        .fa-solid {
-            font-size: 35px;
-        }
+        @include btn-back();
     }
 
     img {
