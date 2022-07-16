@@ -285,6 +285,7 @@ section .d-flex {
 .container-espectaculos h1 {
   padding-top: 15px;
   color: white;
+  font-weight: 100;
   text-align: center;
 }
 .container-espectaculos p {
@@ -298,48 +299,75 @@ section .d-flex {
   justify-content: space-around;
   margin-top: 45px;
   padding-bottom: 20px;
+  background-image: url(/images/logo-vertical-sinLetras-fondoContainer.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -50px;
 }
-.container-espectaculos .videos h3 {
-  color: white;
-  text-align: center;
+.container-espectaculos .videos .videos-section1 {
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
-.container-espectaculos .videos .video-espectaculos {
-  width: 100%;
-}
-.container-espectaculos .videos .text-espect {
-  color: white;
-  text-align: left;
-  font-size: 1.2rem;
-  margin: auto;
-  max-width: 70%;
-}
-.container-espectaculos .videos .lambe, .container-espectaculos .videos .marioneta {
+.container-espectaculos .videos .videos-section1 .lambe, .container-espectaculos .videos .videos-section1 .marioneta {
   border: solid 1px;
   border-radius: 5px;
   background-color: rgb(35, 35, 35);
-  max-width: 45%;
   transition: 0.3s;
+  max-width: 40%;
 }
-.container-espectaculos .videos .lambe:hover, .container-espectaculos .videos .marioneta:hover {
-  transform: scale(1.05);
+.container-espectaculos .videos .videos-section1 .lambe .video-espectaculos, .container-espectaculos .videos .videos-section1 .marioneta .video-espectaculos {
+  width: 100%;
+}
+.container-espectaculos .videos .videos-section1 .lambe:hover, .container-espectaculos .videos .videos-section1 .marioneta:hover {
+  transform: scale(1.02);
   box-shadow: 0 0 5px 1px white;
 }
-.container-espectaculos .videos .lambe a, .container-espectaculos .videos .marioneta a {
+.container-espectaculos .videos .videos-section1 .lambe a, .container-espectaculos .videos .videos-section1 .marioneta a {
   text-decoration: none;
 }
-.container-espectaculos .videos .lambe .btn1, .container-espectaculos .videos .marioneta .btn1 {
-  position: absolute;
+.container-espectaculos .videos .videos-section1 .lambe .btn1, .container-espectaculos .videos .videos-section1 .marioneta .btn1 {
   bottom: 0;
   margin: 10px;
   font-size: 1.2rem;
 }
-.container-espectaculos .videos .marioneta a {
+.container-espectaculos .videos .videos-section1 .marioneta .video-espectaculos {
+  width: 100%;
+}
+.container-espectaculos .videos .videos-section1 .marioneta:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 5px 1px white;
+}
+.container-espectaculos .videos .videos-section1 .marioneta a {
   text-decoration: none;
 }
-.container-espectaculos .videos .marioneta .btn2 {
+.container-espectaculos .videos .videos-section1 .marioneta .btn2 {
   bottom: 0;
   margin: 10px;
   font-size: 1.2rem;
+}
+.container-espectaculos .videos .videos-section2 {
+  width: 100%;
+  justify-content: space-around;
+}
+.container-espectaculos .videos .videos-section2 h3 {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+.container-espectaculos .videos .videos-section2 .video-atelier {
+  width: 40%;
+}
+.container-espectaculos .videos .videos-section2 .video-atelier iframe {
+  width: 100%;
+  align-self: center;
+}
+.container-espectaculos .videos .videos-section2 .video-lambe {
+  width: 40%;
+}
+.container-espectaculos .videos .videos-section2 .video-lambe iframe {
+  width: 100%;
+  align-self: center;
 }
 
 .lambe-lambe, .container-marionetas {
@@ -396,13 +424,13 @@ section .d-flex {
 
 .pagina-lambe .btn {
   height: 50px;
-  width: 200px;
-  margin-left: 5%;
+  width: 150px;
+  margin-left: 3%;
   margin-top: 10px;
-  border: solid 2px;
+  border: solid 1px;
 }
 .pagina-lambe .btn i {
-  font-size: 30px;
+  font-size: 27px;
 }
 .pagina-lambe img {
   width: 50%;
@@ -427,6 +455,7 @@ section .d-flex {
   flex: 1 0 24rem;
   margin: 0.5rem;
   overflow: hidden;
+  border-width: 0 !important;
 }
 .container-marionetas .enderas .gallery-marionetas .gallery-marioneta-image {
   display: block;
@@ -463,13 +492,13 @@ section .d-flex {
 }
 .pagina-enderas a {
   height: 50px;
-  width: 200px;
-  margin-left: 5%;
+  width: 150px;
+  margin-left: 3%;
   margin-top: 10px;
-  border: solid 2px;
+  border: solid 1px;
 }
 .pagina-enderas a i {
-  font-size: 30px;
+  font-size: 27px;
 }
 .pagina-enderas img {
   max-width: 90%;
@@ -525,13 +554,13 @@ section .d-flex {
 
 .taller3 .btn {
   height: 50px;
-  width: 200px;
-  margin-left: 5%;
+  width: 150px;
+  margin-left: 3%;
   margin-top: 10px;
-  border: solid 2px;
+  border: solid 1px;
 }
 .taller3 .btn i {
-  font-size: 30px;
+  font-size: 27px;
 }
 .taller3 img {
   width: 50%;
@@ -657,7 +686,7 @@ section .d-flex {
     width: 70%;
     margin-left: 15%;
   }
-  body .videos .lambe .text-espect, body .container-espectaculos .videos .marioneta .text-espect, .container-espectaculos body .videos .marioneta .text-espect {
+  body .videos .lambe .text-espect, body .container-espectaculos .videos .videos-section1 .marioneta .text-espect, .container-espectaculos body .videos .videos-section1 .marioneta .text-espect {
     font-size: 1rem;
   }
   body .videos .marioneta .text-espect {
@@ -724,22 +753,37 @@ section .d-flex {
     width: 80%;
     margin-left: 10%;
   }
-  body .videos .lambe, body .container-espectaculos .videos .marioneta, .container-espectaculos body .videos .marioneta {
-    min-width: 90%;
+  body .videos {
+    background-image: none !important;
+  }
+  body .videos .videos-section1 {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body .videos .videos-section1 .lambe, body .container-espectaculos .videos .videos-section1 .marioneta, .container-espectaculos body .videos .videos-section1 .marioneta {
+    min-width: 80%;
+    min-height: 300px;
     margin: 10px;
+    align-self: center;
   }
-  body .videos .lambe .text-espect, body .container-espectaculos .videos .marioneta .text-espect, .container-espectaculos body .videos .marioneta .text-espect {
-    font-size: 1rem;
+  body .videos .videos-section1 .lambe .btn1, body .container-espectaculos .videos .videos-section1 .marioneta .btn1, .container-espectaculos body .videos .videos-section1 .marioneta .btn1 {
+    font-size: 1rem !important;
   }
-  body .videos .lambe .btn1, body .container-espectaculos .videos .marioneta .btn1, .container-espectaculos body .videos .marioneta .btn1 {
-    position: relative !important;
+  body .videos .videos-section1 .marioneta {
+    min-width: 80%;
   }
-  body .videos .marioneta .text-espect {
-    font-size: 1rem;
+  body .videos .videos-section1 .marioneta .btn2 {
+    font-size: 1rem !important;
   }
-  body .videos .video-espectaculos {
-    min-width: 90%;
-    max-height: 300px;
+  body .videos .videos-section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .videos .videos-section2 .video-atelier {
+    min-width: 80%;
+  }
+  body .videos .videos-section2 .video-lambe {
+    min-width: 80%;
   }
   body .pagina-lambe .btn {
     width: 50px;
