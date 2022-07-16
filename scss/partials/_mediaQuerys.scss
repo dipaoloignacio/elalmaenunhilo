@@ -167,6 +167,11 @@
             }
         }
 
+        //intervenciones querys.
+        .book{
+            transform: scale(0.95);
+        }
+
         //querys ESPECTACULOS -----
         .videos {
             background-image: none !important;
@@ -275,6 +280,11 @@
                     margin-bottom: 15px;
                 }
             }
+        }
+
+        //intervenciones querys.
+        .book{
+            transform: scale(0.8);
         }
 
         //query Espectaculso
