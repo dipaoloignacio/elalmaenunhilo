@@ -35,12 +35,12 @@ $bookAngle: 60deg;
 $speed: 5s;
 $borderColor: #555;
 
-$images: url("https://i.ibb.co/Ws4mx2p/banner-index.png"),
-    url("https://i.ibb.co/cLxkwqt/taller.jpg"),
-    url("https://i.ibb.co/KbGZWSz/ma-y-mari.jpg"),
-    url("https://i.ibb.co/ct0QNtK/pepe-bandoneon.jpg"),
-    url("https://i.ibb.co/xhysfzD/Sirena-marron.jpg"),
-    url("https://i.ibb.co/Ws4mx2p/banner-index.png");
+$images: url("../../images/img-header/carrusel-roxy.jpg"),
+    url("../../images/img-header/carrusel-pepe.jpg"),
+    url("../../images/img-header/carrusel-taller.jpg"),
+    url("../../images/img-header/carrousell-tourdates.jpg"),
+    url("../../images/img-header/carusel-marioneta.jpg"),
+    url("../../images/img-header/carrusel-roxy.jpg");
 
 // Preload to images
 .imgLoader {
