@@ -38,7 +38,7 @@
                 max-width: 40%;
 
                 .video-espectaculos {
-                    width: 100%;
+                    width: 99.9%;
                 }
 
                 &:hover {
@@ -62,7 +62,7 @@
                 @extend .lambe;
 
                 .video-espectaculos {
-                    width: 100%;
+                    width: 99.7%;
                 }
 
                 &:hover {
@@ -121,7 +121,7 @@
     background-color: $color-background-container;
     color: white;
 
-    .btn-back{
+    .btn-back {
         @include btn-back;
     }
 
@@ -190,33 +190,54 @@
     .images-marionetas {
         display: flex;
         flex-wrap: wrap;
-        max-width: 100%;
-        gap: 10px;
+        min-width: 100%;
+        gap: 5px;
         margin: 40px auto;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
-        a {
-            width: 30%;
-            transition: 0.3s;
-            text-decoration: none;
+        .card-marionetas {
+            max-width: 30%;
             color: white;
+            margin-bottom: 30px;
 
-            button {
-                display: none;
+            .btn {
+                font-size: 1rem;
+                margin-bottom: 5px;
             }
 
-            &:hover {
-                transform: scale(1.1);
-                box-shadow: 0 0 6px 2px white;
+            a {
+                text-decoration: none;
 
-                button {
-                    position: absolute;
-                    bottom: -30px;
-                    left: 10px;
-                    display: block;
+                .btn:hover {
+                    color: black !important;
+                }
+
+                &:hover {
+                    img {
+                        transition: 0.3s;
+                        transform: scale(1.02);
+                        box-shadow: 0 0 6px 2px white;
+                    }
                 }
             }
+
+            h4 {
+                text-align: center;
+            }
+
+            .lista-creditos {
+                padding: 0;
+                list-style: none;
+                text-align: center;
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+
         }
+
+
     }
 
     // .enderas {

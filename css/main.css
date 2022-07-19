@@ -916,7 +916,7 @@ section .d-flex {
   max-width: 40%;
 }
 .container-espectaculos .videos .videos-section1 .lambe .video-espectaculos, .container-espectaculos .videos .videos-section1 .marioneta .video-espectaculos {
-  width: 100%;
+  width: 99.9%;
 }
 .container-espectaculos .videos .videos-section1 .lambe:hover, .container-espectaculos .videos .videos-section1 .marioneta:hover {
   transform: scale(1.02);
@@ -931,7 +931,7 @@ section .d-flex {
   font-size: 1.2rem;
 }
 .container-espectaculos .videos .videos-section1 .marioneta .video-espectaculos {
-  width: 100%;
+  width: 99.7%;
 }
 .container-espectaculos .videos .videos-section1 .marioneta:hover {
   transform: scale(1.02);
@@ -1056,29 +1056,41 @@ section .d-flex {
 .container-marionetas .images-marionetas {
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
-  gap: 10px;
+  min-width: 100%;
+  gap: 5px;
   margin: 40px auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-.container-marionetas .images-marionetas a {
-  width: 30%;
-  transition: 0.3s;
-  text-decoration: none;
+.container-marionetas .images-marionetas .card-marionetas {
+  max-width: 30%;
   color: white;
+  margin-bottom: 30px;
 }
-.container-marionetas .images-marionetas a button {
-  display: none;
+.container-marionetas .images-marionetas .card-marionetas .btn {
+  font-size: 1rem;
+  margin-bottom: 5px;
 }
-.container-marionetas .images-marionetas a:hover {
-  transform: scale(1.1);
+.container-marionetas .images-marionetas .card-marionetas a {
+  text-decoration: none;
+}
+.container-marionetas .images-marionetas .card-marionetas a .btn:hover {
+  color: black !important;
+}
+.container-marionetas .images-marionetas .card-marionetas a:hover img {
+  transition: 0.3s;
+  transform: scale(1.02);
   box-shadow: 0 0 6px 2px white;
 }
-.container-marionetas .images-marionetas a:hover button {
-  position: absolute;
-  bottom: -30px;
-  left: 10px;
-  display: block;
+.container-marionetas .images-marionetas .card-marionetas h4 {
+  text-align: center;
+}
+.container-marionetas .images-marionetas .card-marionetas .lista-creditos {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.container-marionetas .images-marionetas .card-marionetas .lista-creditos li {
+  margin-bottom: 10px;
 }
 
 .pagina-enderas {
@@ -1319,9 +1331,8 @@ section .d-flex {
     margin-left: 15%;
     margin-bottom: 20px;
   }
-  body .container-marionetas .images-marionetas a {
-    width: 60%;
-    margin: 20px;
+  body .container-marionetas .images-marionetas .card-marionetas {
+    min-width: 49%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1395,9 +1406,6 @@ section .d-flex {
     width: 80%;
     margin-left: 10%;
   }
-  body .container-marionetas .images-marionetas a {
-    width: 70%;
-  }
   body .container-company .logo-movil {
     min-width: 70%;
     margin: auto;
@@ -1429,17 +1437,8 @@ section .d-flex {
   body .book {
     transform: scale(0.8);
   }
-  body .container-marionetas .images-marionetas a {
-    position: relative;
-    width: 80%;
-    text-decoration: none;
-    margin-bottom: 20px;
-  }
-  body .container-marionetas .images-marionetas a button {
-    position: absolute;
-    bottom: -30px;
-    left: 10px;
-    display: block;
+  body .container-marionetas .images-marionetas .card-marionetas {
+    min-width: 70%;
   }
   body .container-company .logo-movil {
     min-width: 90%;

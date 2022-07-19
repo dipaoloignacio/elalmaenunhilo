@@ -111,9 +111,8 @@
         // url espectaculos/marionetas/marionetas.
         .container-marionetas {
             .images-marionetas {
-                a {
-                    width: 60%;
-                    margin: 20px;
+                .card-marionetas{
+                    min-width: 49%;
                 }
             }
         }
@@ -231,13 +230,7 @@
         }
 
         // url espectaculos/marionetas/marionetas.
-        .container-marionetas {
-            .images-marionetas {
-                a {
-                    width: 70%;
-                }
-            }
-        }
+        
 
         // url marioneta-pages/obras-marionetas/enderas
 
@@ -300,18 +293,8 @@
         // url espectaculos/marionetas/marionetas.
         .container-marionetas {
             .images-marionetas {
-                a {
-                    position: relative;
-                    width: 80%;
-                    text-decoration: none;
-                    margin-bottom: 20px;
-
-                    button {
-                        position: absolute;
-                        bottom: -30px;
-                        left: 10px;
-                        display: block;
-                    }
+                .card-marionetas{
+                    min-width: 70%;
                 }
             }
         }
