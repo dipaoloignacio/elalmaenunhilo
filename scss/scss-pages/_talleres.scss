@@ -1,24 +1,31 @@
 .banner-taller {
     max-height: 600px;
     justify-content: center;
+    background-color: $color-background-body;
 }
 
 .container-taller {
     background-color: $color-background-container;
 
     h1 {
+        display: inline-block;
+        margin-left: 10%;
         color: rgb(195, 195, 195);
-        text-align: center;
-        padding: 20px;
+        max-width: auto;
+        border-bottom: solid 1px #eee;
+        padding-top: 80px;
+        padding-bottom: 5px;
     }
 
     .video-taller {
-        margin: auto;
-
+        padding-top: 120px;
         iframe {
-            width: 70%;
+            width: 60%;
             height: 400px;
-            margin-left: 15%;
+            margin-left: 20%;
+            margin-bottom: 50px;
+            padding: 5px;
+            border: solid 1px #eee;
         }
     }
 
@@ -30,7 +37,7 @@
         justify-content: space-around;
 
         a {
-            max-width: 30%;
+            max-width: 22.5%;
             transition: 0.3s;
 
             button {

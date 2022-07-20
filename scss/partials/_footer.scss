@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+footer {
+    background-color: $color-background-body;
+}
+
 .redes {
     display: inline-flex;
     list-style: none;
@@ -67,7 +71,7 @@
     a {
         color: #474747;
     }
-    
+
     .facebook:hover,
     .instagram:hover,
     .youtube:hover,
@@ -76,35 +80,28 @@
             color: white;
         }
     }
-    
+
     .facebook:hover,
     .facebook:hover .nombre-red,
     .facebook:hover .nombre-red::before {
         background: #1877F2;
     }
-    
+
     .instagram:hover,
     .instagram:hover .nombre-red,
     .instagram:hover .nombre-red::before {
         background: #E4405F;
     }
-    
+
     .youtube:hover,
     .youtube:hover .nombre-red,
     .youtube:hover .nombre-red::before {
         background: #CD201F;
     }
-    
+
     .envelope:hover,
     .envelope:hover .nombre-red,
     .envelope:hover .nombre-red::before {
         background: #c66d2e;
     }
 }
-
-
-
-
-
-
-

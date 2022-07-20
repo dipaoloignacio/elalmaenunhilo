@@ -8,12 +8,11 @@
 
 .container-inter{
     background-color: $color-background-container;
-    h1{
-        text-align: center;
-        color: white;
-        padding-bottom: 20px;
+    .container-gallery-interneviones{
+        padding-top: 80px;
+        max-width: 80%;
+        margin: auto;
     }
-
     .libro{
         margin-left:20px;
     }

@@ -3,9 +3,6 @@
 @media screen and (max-width: 1100px) {
 
     body {
-        width: 80%;
-        margin: 30px auto;
-
         //querys Index----
         .container-index {
             section {
@@ -22,18 +19,21 @@
         // Querys TALLERES-----
         .container-taller {
             .video-taller {
+                padding-top: 80px ;
                 iframe {
-                    width: 90%;
-                    height: 200px;
-                    margin-left: 5%;
+                    width: 60%;
+                    height: 300px;
+                    margin-left: 20%;
+
                 }
             }
 
             .images-taller {
                 min-width: 100%;
-
+                gap:50px;
+                margin-bottom: 0;
                 .foto-taller {
-                    min-width: 45%;
+                    min-width: 25%;
                     margin-bottom: 15px;
                 }
             }
@@ -124,7 +124,6 @@
 @media screen and (max-width: 768px) {
 
     body {
-        width: 80%;
 
         //querys Index----
         .container-index {
@@ -141,9 +140,9 @@
         .container-taller {
             .video-taller {
                 iframe {
-                    width: 90%;
-                    height: 200px;
-                    margin-left: 5%;
+                    width: 60%;
+                    height: 300px;
+                    margin-left: 20%;
                 }
             }
 
@@ -151,7 +150,7 @@
                 min-width: 100%;
 
                 .foto-taller {
-                    min-width: 70%;
+                    min-width: 35%;
                     margin-bottom: 15px;
                 }
             }
@@ -268,9 +267,9 @@
         .container-taller {
             .video-taller {
                 iframe {
-                    width: 90%;
+                    width: 80%;
                     height: 200px;
-                    margin-left: 5%;
+                    margin-left: 10%;
                 }
             }
 
@@ -278,7 +277,7 @@
                 min-width: 100%;
 
                 .foto-taller {
-                    min-width: 70%;
+                    min-width: 45%;
                     margin-bottom: 15px;
                 }
             }
