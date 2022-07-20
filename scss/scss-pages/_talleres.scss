@@ -10,9 +10,9 @@
     h1 {
         display: inline-block;
         margin-left: 10%;
-        color: rgb(195, 195, 195);
+        color: $color-text;
         max-width: auto;
-        border-bottom: solid 1px #eee;
+        border-bottom: solid 1px $color-text;
         padding-top: 80px;
         padding-bottom: 5px;
     }

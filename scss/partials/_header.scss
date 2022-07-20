@@ -1,18 +1,14 @@
 /* --------HEADER---------- */
-.position-relative {
-    background-color: $color-background-img-nav;
+.container-img-banner {
+    min-width: 100%;
+    background-color: rgb(229, 229, 229);
 }
 
 #img-logo {
-    width: 100%;
-    max-height: 500px;
-}
-
-section .d-flex {
-    max-width: 150px;
-    max-height: 25px;
-    bottom: 5%;
-    right: 0;
+    display:block;
+    width: auto;
+    margin: auto;
+    max-height: 300px;
 }
 
 // BTN!!
@@ -26,7 +22,7 @@ section .d-flex {
 
     a{
         text-decoration: none;
-        color: #eee !important;
+        color: #111 !important;
     }
 
     &:hover {
@@ -42,7 +38,7 @@ section .d-flex {
         right: 0;
         height: 2px;
         width: 0;
-        background: #eee;
+        background: #444;
         transition: 200ms ease all;
     }
 
@@ -65,5 +61,5 @@ section .d-flex {
 }
 
 .carousel-item {
-    max-height: 600px;
+    height: 450px !important;
 }

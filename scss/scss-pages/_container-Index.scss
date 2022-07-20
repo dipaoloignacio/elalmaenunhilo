@@ -4,8 +4,8 @@
 
     h1 {
         display: inline-block;
-        color: #eee;
-        border-bottom: solid 1px #eee;
+        color: $color-text;
+        border-bottom: solid 1px $color-text;
         margin-left: 10%;
         margin-bottom: 30px;
         padding-top: 40px;
@@ -18,33 +18,14 @@
         margin-left: 15%;
         margin-bottom: 50px;
         text-align: left;
-        color: white;
+        color: $color-text;
         font-size: 20px;
-    }
-
-    .row {
-        margin: 15px;
-    }
-
-    #cards {
-        padding-bottom: 60px;
-        max-width: 70%;
-        margin: auto;
-        .card{
-            background-color: rgb(35, 35, 35);
-            border: 1px solid white;
-            width: 30%;
-            transition: 0.3s;
-            &:hover{
-                box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
-            }
-        }
     }
 
     #btn-subir{
         width: 20%;
         margin: auto;
-        color: white;
+        color: $color-text;
         text-align: center;
         font-size: 60px;
     }

@@ -603,20 +603,16 @@ body {
 }
 
 /* --------HEADER---------- */
-.position-relative {
-  background-color: rgb(15, 15, 15);
+.container-img-banner {
+  min-width: 100%;
+  background-color: rgb(229, 229, 229);
 }
 
 #img-logo {
-  width: 100%;
-  max-height: 500px;
-}
-
-section .d-flex {
-  max-width: 150px;
-  max-height: 25px;
-  bottom: 5%;
-  right: 0;
+  display: block;
+  width: auto;
+  margin: auto;
+  max-height: 300px;
 }
 
 .boton-nav {
@@ -625,11 +621,11 @@ section .d-flex {
   height: 40px;
   line-height: 42px;
   border: none;
-  background: rgb(65, 65, 65);
+  background: rgb(210, 210, 210);
 }
 .boton-nav a {
   text-decoration: none;
-  color: #eee !important;
+  color: #111 !important;
 }
 .boton-nav:hover {
   background: transparent;
@@ -642,7 +638,7 @@ section .d-flex {
   right: 0;
   height: 2px;
   width: 0;
-  background: #eee;
+  background: #444;
   transition: 200ms ease all;
 }
 .boton-nav:after {
@@ -657,11 +653,11 @@ section .d-flex {
 }
 
 .bg-propio {
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(210, 210, 210);
 }
 
 .carousel-item {
-  max-height: 600px;
+  height: 450px !important;
 }
 
 .gallery {
@@ -697,12 +693,12 @@ section .d-flex {
 }
 /* ------MAIN------- */
 .container-index {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-index h1 {
   display: inline-block;
-  color: #eee;
-  border-bottom: solid 1px #eee;
+  color: #111;
+  border-bottom: solid 1px #111;
   margin-left: 10%;
   margin-bottom: 30px;
   padding-top: 40px;
@@ -714,36 +710,19 @@ section .d-flex {
   margin-left: 15%;
   margin-bottom: 50px;
   text-align: left;
-  color: white;
+  color: #111;
   font-size: 20px;
-}
-.container-index .row {
-  margin: 15px;
-}
-.container-index #cards {
-  padding-bottom: 60px;
-  max-width: 70%;
-  margin: auto;
-}
-.container-index #cards .card {
-  background-color: rgb(35, 35, 35);
-  border: 1px solid white;
-  width: 30%;
-  transition: 0.3s;
-}
-.container-index #cards .card:hover {
-  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
 }
 .container-index #btn-subir {
   width: 20%;
   margin: auto;
-  color: white;
+  color: #111;
   text-align: center;
   font-size: 60px;
 }
 
 .container-company {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-company .text-company {
   max-width: 70%;
@@ -764,7 +743,7 @@ section .d-flex {
   font-size: 1.1rem;
 }
 .container-company .logo-movil {
-  background: rgb(35, 35, 35);
+  background: rgb(229, 229, 229);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -806,13 +785,13 @@ section .d-flex {
   margin: auto;
   padding: 10px;
   text-align: center;
-  border: solid 1px rgb(65, 65, 65);
+  border: solid 1px rgb(210, 210, 210);
   border-radius: 10px;
   color: white;
 }
 
 .container-contact {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   color: white;
   text-align: center;
 }
@@ -855,7 +834,7 @@ section .d-flex {
 }
 
 .container-inter {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-inter .container-gallery-interneviones {
   padding-top: 80px;
@@ -867,7 +846,7 @@ section .d-flex {
 }
 
 .container-portfolio {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-portfolio .porfolio {
   width: 100%;
@@ -878,7 +857,7 @@ section .d-flex {
 }
 
 .container-espectaculos {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-espectaculos h1 {
   display: inline-block;
@@ -900,7 +879,7 @@ section .d-flex {
   justify-content: space-around;
   margin-top: 80px;
   padding-bottom: 30px;
-  background-image: url(/images/logo-vertical-sinLetras-fondoContainer.png);
+  background-image: url(/images/logo-vertical-sinLetras-fondoContainer.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -150px;
@@ -914,7 +893,7 @@ section .d-flex {
 .container-espectaculos .videos .videos-section1 .lambe, .container-espectaculos .videos .videos-section1 .marioneta {
   border: solid 1px;
   border-radius: 5px;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   transition: 0.3s;
   max-width: 30%;
 }
@@ -974,7 +953,7 @@ section .d-flex {
 }
 
 .lambe-lambe, .container-marionetas {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   color: white;
 }
 .lambe-lambe .btn-back, .container-marionetas .btn-back {
@@ -982,7 +961,7 @@ section .d-flex {
   width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   border: solid 1px white;
   color: wheat;
 }
@@ -1039,7 +1018,7 @@ section .d-flex {
   width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   border: solid 1px white;
   color: wheat;
 }
@@ -1106,7 +1085,7 @@ section .d-flex {
   width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   border: solid 1px white;
   color: wheat;
 }
@@ -1124,14 +1103,14 @@ section .d-flex {
 }
 
 .container-taller {
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
 }
 .container-taller h1 {
   display: inline-block;
   margin-left: 10%;
-  color: rgb(195, 195, 195);
+  color: #111;
   max-width: auto;
-  border-bottom: solid 1px #eee;
+  border-bottom: solid 1px #111;
   padding-top: 80px;
   padding-bottom: 5px;
 }
@@ -1176,7 +1155,7 @@ section .d-flex {
   width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(229, 229, 229);
   border: solid 1px white;
   color: wheat;
 }
