@@ -256,8 +256,6 @@
 @media screen and (max-width: 500px) {
 
     body {
-        width: 100%;
-        margin-top: 0;
 
         #img-logo {
             min-height: 200px;
@@ -312,14 +310,6 @@
             }
         }
 
-        //querys portfolio
-
-        .container-portfolio{
-            iframe{
-                max-width: 98%;
-                margin: 1%;
-            }
-        }
     }
 
 }
