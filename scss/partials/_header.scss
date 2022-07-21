@@ -1,15 +1,20 @@
 /* --------HEADER---------- */
 .container-img-banner {
+    position: relative;
     min-width: 100%;
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(240, 240, 240);
+    #img-logo {
+        display:block;
+        margin: auto;
+        max-height: 300px;
+    }
+    ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
-#img-logo {
-    display:block;
-    width: auto;
-    margin: auto;
-    max-height: 300px;
-}
 
 // BTN!!
 .boton-nav {
@@ -22,7 +27,7 @@
 
     a{
         text-decoration: none;
-        color: #111 !important;
+        color: $color-text;
     }
 
     &:hover {
@@ -38,7 +43,7 @@
         right: 0;
         height: 2px;
         width: 0;
-        background: #444;
+        background: $color-text-nav;
         transition: 200ms ease all;
     }
 
@@ -60,6 +65,10 @@
     background-color: $color-background-nav;
 }
 
-.carousel-item {
-    height: 450px !important;
+.carousel-item{
+    overflow: hidden;
+    max-height: 400px;
+    img{
+        width: 70%;
+    }
 }

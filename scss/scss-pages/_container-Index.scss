@@ -2,25 +2,31 @@
 .container-index {
     background-color: $color-background-container;
 
-    h1 {
+    .title-index{
         display: inline-block;
-        color: $color-text;
-        border-bottom: solid 1px $color-text;
+        max-width: 80%;
         margin-left: 10%;
-        margin-bottom: 30px;
-        padding-top: 40px;
-        padding-bottom: 5px;
-        font-size: 35px;
-    }
-
-    section p {
-        width: 70%;
-        margin-left: 15%;
         margin-bottom: 50px;
-        text-align: left;
-        color: $color-text;
-        font-size: 20px;
-    }
+        border-bottom: solid 1px #111;
+
+        h1 {
+            display: inline-block;
+            color: $color-text;
+            border-bottom: solid 1px $color-text;
+            margin-bottom: 40px;
+            padding-top: 40px;
+            padding-bottom: 5px;
+            font-size: 35px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-bottom: 50px;
+            text-align: left;
+            color: $color-text;
+            font-size: 20px;
+        }
+    } 
 
     #btn-subir{
         width: 20%;
@@ -29,4 +35,5 @@
         text-align: center;
         font-size: 60px;
     }
+
 }

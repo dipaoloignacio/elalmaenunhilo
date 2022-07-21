@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 footer {
-    background-color: $color-background-body;
+    background-color: $color-background-nav;
 }
 
 .redes {
@@ -14,7 +14,7 @@ footer {
 
     .icon {
         position: relative;
-        background: #b8b8b8;
+        background: $color-text-nav;
         border-radius: 50%;
         padding: 5px;
         margin: 10px;

@@ -3,6 +3,7 @@
 @media screen and (max-width: 1100px) {
 
     body {
+
         //querys Index----
         .container-index {
             section {
@@ -19,7 +20,8 @@
         // Querys TALLERES-----
         .container-taller {
             .video-taller {
-                padding-top: 80px ;
+                padding-top: 80px;
+
                 iframe {
                     width: 60%;
                     height: 300px;
@@ -30,8 +32,9 @@
 
             .images-taller {
                 min-width: 100%;
-                gap:50px;
+                gap: 50px;
                 margin-bottom: 0;
+
                 .foto-taller {
                     min-width: 25%;
                     margin-bottom: 15px;
@@ -111,7 +114,7 @@
         // url espectaculos/marionetas/marionetas.
         .container-marionetas {
             .images-marionetas {
-                .card-marionetas{
+                .card-marionetas {
                     min-width: 49%;
                 }
             }
@@ -229,7 +232,7 @@
         }
 
         // url espectaculos/marionetas/marionetas.
-        
+
 
         // url marioneta-pages/obras-marionetas/enderas
 
@@ -256,6 +259,13 @@
 @media screen and (max-width: 500px) {
 
     body {
+        header {
+            .carousel-item{
+                img{
+                    width: 100%;
+                }
+            }
+        }
 
         #img-logo {
             min-height: 200px;
@@ -290,7 +300,7 @@
         // url espectaculos/marionetas/marionetas.
         .container-marionetas {
             .images-marionetas {
-                .card-marionetas{
+                .card-marionetas {
                     min-width: 70%;
                 }
             }
