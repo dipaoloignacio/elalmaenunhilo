@@ -6,13 +6,13 @@
         padding-top: 40px;
         padding-bottom: 6px;
         margin-left: 10%;
-        color: white;
+        color: $color-text;
         text-align: center;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid $color-text;
     }
 
     p {
-        color: aliceblue;
+        color: $color-text;
         text-align: center;
         font-size: 1.1rem;
     }
@@ -23,10 +23,10 @@
         justify-content: space-around;
         margin-top: 80px;
         padding-bottom: 30px;
-        background-image: url(/images/logo-vertical-sinLetras-fondoContainer.jpg);
+        background-image: url(/images/img-header/logo-vertical-sinLetras-fondoContainer.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
-        background-position-y: -150px;
+        background-position-y: -250px;
 
         .videos-section1 {
             max-width: 100%;
@@ -36,7 +36,7 @@
             .lambe {
                 border: solid 1px;
                 border-radius: 5px;
-                background-color: $color-background-container;
+                background-color: #eee;
                 transition: 0.3s;
                 max-width: 30%;
 
@@ -46,7 +46,7 @@
 
                 &:hover {
                     transform: scale(1.02);
-                    box-shadow: 0 0 5px 1px white;
+                    box-shadow: 0 0 5px 1px #eee;
                 }
 
                 a {
@@ -70,7 +70,7 @@
 
                 &:hover {
                     transform: scale(1.02);
-                    box-shadow: 0 0 5px 1px white;
+                    box-shadow: 0 0 5px 1px #eee;
                 }
 
                 a {
@@ -94,9 +94,13 @@
 
 
             h3 {
-                color: white;
+                display: inline-block;
+                padding-bottom: 5px;
+                border-bottom: solid 1px $color-text;
+                color: $color-text;
                 text-align: center;
-                margin-top: 20px;
+                margin-bottom: 40px;
+                
             }
 
             .video-atelier {
@@ -109,7 +113,7 @@
             }
 
             .video-lambe {
-                width: 40%;
+                width: 35%;
 
                 iframe {
                     width: 100%;
@@ -123,7 +127,7 @@
 
 //Estilos cuando entras a pages/espectaculos-pages/lambelambe.html.
 .lambe-lambe {
-    background-color: $color-background-container;
+    background-color: #444;
     color: white;
 
     .btn-back {
@@ -197,7 +201,8 @@
         flex-wrap: wrap;
         min-width: 100%;
         gap: 5px;
-        margin: 40px auto;
+        margin-top: 40px;
+        margin:auto;
         justify-content: space-evenly;
 
         .card-marionetas {

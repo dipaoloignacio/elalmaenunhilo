@@ -18,14 +18,18 @@
     }
 
     .video-taller {
+        display: inline-block;
+        width: 80%;
+        margin-left: 10%;
         padding-top: 120px;
+        border-top: solid 1px #111;
         iframe {
-            width: 60%;
+            width: 80%;
             height: 400px;
-            margin-left: 20%;
+            margin-left: 10%;
             margin-bottom: 50px;
             padding: 5px;
-            border: solid 1px #eee;
+            border: solid 1px #111;
         }
     }
 
@@ -33,21 +37,33 @@
         display: flex;
         max-width: 90%;
         flex-wrap: wrap;
-        margin: 40px auto;
+        margin: 100px auto;
         justify-content: space-around;
 
         a {
             max-width: 22.5%;
             transition: 0.3s;
-
-            button {
+            padding: 2px;
+            border: solid 1px #999;
+            text-decoration: none;
+            .btn {
                 display: none;
             }
-
+            .btn-ver-talleres{
+                color: $color-text;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+            
             &:hover {
                 transform: scale(1.1);
-                box-shadow: 0 0 6px 2px white;
-
+                box-shadow: 5px 5px 3px 2px #999;
+                border: none;
+                padding: 0;
+                .btn-ver-talleres{
+                    display: none;
+                }
                 button {
                     position: absolute;
                     bottom: -20px;

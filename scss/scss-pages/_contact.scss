@@ -1,13 +1,21 @@
 .container-contact {
     background-color: $color-background-container;
-    color: white;
+    color: $color-text;
     text-align: center;
 
+    .tittle-contact{
+        display: inline-block;
+        font-weight: 400;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px $color-text;
+    }
     .contacto {
         max-width: 100%;
 
         .form {
-            max-width: 80%;
+            max-width: 50%;
             margin: auto;
             color: white;
             text-align: center;
@@ -32,8 +40,11 @@
                 height: 35px;
                 border-radius: 5px;
                 color: white;
-                background-color: rgb(60, 60, 60);
-                margin-bottom: 10px;
+                background-color: #444;
+                margin-bottom: 40px;
+                &:hover{
+                    background-color: #333;
+                }
             }
         }
     }

@@ -4,13 +4,13 @@
         max-width: 70%;
         margin: auto;
         padding-top: 20px;
-        color: white;
+        color: $color-text;
         h2{
             display: inline-block;
             margin-top: 30px;
             margin-bottom: 20px;
             padding-bottom: 5px;
-            border-bottom: solid 1px #eee;
+            border-bottom: solid 1px $color-text;
             text-align: center;
         }
         p{
@@ -70,7 +70,7 @@
         text-align: center;
         border: solid 1px $color-background-nav;
         border-radius: 10px;
-        color: white;
+        color: $color-text;
     }
 
 }

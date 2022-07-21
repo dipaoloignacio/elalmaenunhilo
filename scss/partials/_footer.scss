@@ -2,8 +2,10 @@
 
 footer {
     background-color: $color-background-nav;
+    p{
+        color: #eee;
+    }
 }
-
 .redes {
     display: inline-flex;
     list-style: none;
@@ -104,4 +106,5 @@ footer {
     .envelope:hover .nombre-red::before {
         background: #c66d2e;
     }
+    
 }
