@@ -699,6 +699,101 @@ body {
     margin: 0;
   }
 }
+footer {
+  background-color: rgb(71, 71, 71);
+}
+footer p {
+  color: #eee;
+}
+
+.redes {
+  display: inline-flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.redes .icon {
+  position: relative;
+  background: #eee;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.redes .icon:hover .nombre-red {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.redes .icon:hover span, .redes .icon:hover .nombre-red {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.redes .nombre-red {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.redes .nombre-red::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.redes a {
+  color: #474747;
+}
+.redes .facebook:hover a,
+.redes .instagram:hover a,
+.redes .youtube:hover a,
+.redes .envelope:hover a {
+  color: white;
+}
+.redes .facebook:hover,
+.redes .facebook:hover .nombre-red,
+.redes .facebook:hover .nombre-red::before {
+  background: #1877F2;
+}
+.redes .instagram:hover,
+.redes .instagram:hover .nombre-red,
+.redes .instagram:hover .nombre-red::before {
+  background: #E4405F;
+}
+.redes .youtube:hover,
+.redes .youtube:hover .nombre-red,
+.redes .youtube:hover .nombre-red::before {
+  background: #CD201F;
+}
+.redes .envelope:hover,
+.redes .envelope:hover .nombre-red,
+.redes .envelope:hover .nombre-red::before {
+  background: #c66d2e;
+}
+
 /* ------MAIN------- */
 .container-index {
   background-color: rgb(229, 229, 229);
@@ -885,7 +980,7 @@ body {
 }
 .container-espectaculos h1 {
   display: inline-block;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 6px;
   margin-left: 10%;
   color: #111;
@@ -902,7 +997,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 80px;
-  padding-bottom: 30px;
   background-image: url(/images/img-header/logo-vertical-sinLetras-fondoContainer.jpg);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -954,13 +1048,15 @@ body {
 .container-espectaculos .videos .videos-section2 {
   width: 100%;
   margin-top: 40px;
+  padding: 60px 0;
   justify-content: space-around;
+  background-color: #222;
 }
 .container-espectaculos .videos .videos-section2 h3 {
   display: inline-block;
   padding-bottom: 5px;
-  border-bottom: solid 1px #111;
-  color: #111;
+  border-bottom: solid 1px #eee;
+  color: #eee;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -1011,10 +1107,12 @@ body {
 }
 .lambe-lambe article h3, .container-marionetas article h3 {
   text-align: center;
+  padding: 30px;
 }
 .lambe-lambe .bellos-y-bestias p, .container-marionetas .bellos-y-bestias p {
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
+  margin-bottom: 50px;
 }
 .lambe-lambe .bellos-y-bestias a, .container-marionetas .bellos-y-bestias a {
   width: 35%;
@@ -1022,8 +1120,9 @@ body {
   margin-bottom: 20px;
 }
 .lambe-lambe .carrusel-del-viejo-matias p, .container-marionetas .carrusel-del-viejo-matias p {
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
+  margin-bottom: 50px;
 }
 .lambe-lambe .carrusel-del-viejo-matias a, .container-marionetas .carrusel-del-viejo-matias a {
   width: 35%;
@@ -1031,8 +1130,9 @@ body {
   margin-bottom: 20px;
 }
 .lambe-lambe .milonga p, .container-marionetas .milonga p {
-  max-width: 50%;
+  max-width: 60%;
   margin: auto;
+  margin-bottom: 50px;
 }
 .lambe-lambe .milonga a, .container-marionetas .milonga a {
   width: 35%;
@@ -1062,6 +1162,13 @@ body {
 
 .container-marionetas {
   min-height: 600px;
+}
+.container-marionetas h2 {
+  display: inline-block;
+  border-bottom: solid 1px #eee;
+  margin-left: 10%;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 .container-marionetas .images-marionetas {
   display: flex;
@@ -1094,6 +1201,7 @@ body {
 }
 .container-marionetas .images-marionetas .card-marionetas h4 {
   text-align: center;
+  margin: 20px;
 }
 .container-marionetas .images-marionetas .card-marionetas .lista-creditos {
   padding: 0;
@@ -1105,8 +1213,7 @@ body {
 }
 
 .pagina-enderas {
-  width: 90%;
-  margin-left: 5%;
+  text-align: center;
 }
 .pagina-enderas a {
   height: 35px;
@@ -1122,6 +1229,46 @@ body {
 }
 .pagina-enderas a i {
   font-size: 20px;
+}
+.pagina-enderas h1 {
+  margin-top: 50px;
+}
+.pagina-enderas p {
+  max-width: 80%;
+  margin: 20px auto;
+}
+.pagina-enderas .lista-creditos {
+  color: #eee;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.pagina-enderas .lista-creditos li {
+  margin-bottom: 10px;
+}
+.pagina-enderas .trailer h3 {
+  display: inline-block;
+  color: #eee;
+  margin-top: 30px;
+  padding: 5px;
+  border-bottom: solid 1px #eee;
+}
+.pagina-enderas iframe {
+  border: solid 1px #eee;
+  padding: 5px;
+  width: 50%;
+  height: 300px;
+  margin: 50px auto;
+}
+.pagina-enderas h4 {
+  display: inline-block;
+  margin-top: 70px;
+  padding-bottom: 5px;
+  color: #eee;
+  border-bottom: solid 1px #eee;
+}
+.pagina-enderas .gallery {
+  margin-top: 50px;
 }
 
 .banner-taller {
@@ -1214,101 +1361,6 @@ body {
 .taller3 img {
   width: 50%;
   margin-left: 25%;
-}
-
-footer {
-  background-color: rgb(71, 71, 71);
-}
-footer p {
-  color: #eee;
-}
-
-.redes {
-  display: inline-flex;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.redes .icon {
-  position: relative;
-  background: #eee;
-  border-radius: 50%;
-  padding: 5px;
-  margin: 10px;
-  width: 30px;
-  height: 30px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.redes .icon:hover .nombre-red {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-.redes .icon:hover span, .redes .icon:hover .nombre-red {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-.redes .nombre-red {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.redes .nombre-red::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.redes a {
-  color: #474747;
-}
-.redes .facebook:hover a,
-.redes .instagram:hover a,
-.redes .youtube:hover a,
-.redes .envelope:hover a {
-  color: white;
-}
-.redes .facebook:hover,
-.redes .facebook:hover .nombre-red,
-.redes .facebook:hover .nombre-red::before {
-  background: #1877F2;
-}
-.redes .instagram:hover,
-.redes .instagram:hover .nombre-red,
-.redes .instagram:hover .nombre-red::before {
-  background: #E4405F;
-}
-.redes .youtube:hover,
-.redes .youtube:hover .nombre-red,
-.redes .youtube:hover .nombre-red::before {
-  background: #CD201F;
-}
-.redes .envelope:hover,
-.redes .envelope:hover .nombre-red,
-.redes .envelope:hover .nombre-red::before {
-  background: #c66d2e;
 }
 
 /* -----MEDIA QUERY----- */
@@ -1475,7 +1527,12 @@ footer p {
     min-width: 45%;
     margin-bottom: 15px;
   }
-  body .book {
+  body .container-inter .container-gallery-interneviones .gallery {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+  }
+  body .container-inter .book {
     transform: scale(0.8);
   }
   body .container-marionetas .images-marionetas .card-marionetas {

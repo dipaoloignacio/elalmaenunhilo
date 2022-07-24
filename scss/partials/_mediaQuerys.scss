@@ -292,8 +292,17 @@
         }
 
         //intervenciones querys.
-        .book {
-            transform: scale(0.8);
+        .container-inter{
+            .container-gallery-interneviones{
+                .gallery{
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 80%;
+                }
+            }
+            .book {
+                transform: scale(0.8);
+            }
         }
 
         //query Espectaculos

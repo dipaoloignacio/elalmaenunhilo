@@ -1,16 +1,23 @@
+//Partials
 @import "partials/_variables";
 @import "partials/libro-index";
 @import "partials/_general";
 @import "partials/_header.scss";
 @import "partials/gallery-index";
 @import "partials/btn-back";
+@import "partials/_footer";
+
+//Estilos de cada Pagina.
 @import "scss-pages/_container-Index";
 @import "scss-pages/_compania";
 @import "scss-pages/_contact";
 @import "scss-pages/_fechas";
 @import "scss-pages/_festivales";
-@import "scss-pages/_shows";
+@import "scss-pages/espectaculos/shows";
+@import "scss-pages/espectaculos/lambe-lambe/lambelambe.scss";
+@import "scss-pages/espectaculos/marionetas/marionetas.scss";
 @import "scss-pages/_talleres";
-@import "partials/_footer";
+
+//MEDIA QUERYS
 @import "partials/_mediaQuerys.scss";
 
