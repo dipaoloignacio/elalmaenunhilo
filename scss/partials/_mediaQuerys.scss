@@ -152,8 +152,8 @@
             .images-taller {
                 min-width: 100%;
 
-                .foto-taller {
-                    min-width: 35%;
+                a {
+                    min-width: 50% !important;
                     margin-bottom: 15px;
                 }
             }
@@ -285,7 +285,7 @@
                 min-width: 100%;
 
                 .foto-taller {
-                    min-width: 45%;
+                    min-width: 80% !important;
                     margin-bottom: 15px;
                 }
             }
@@ -315,6 +315,11 @@
             }
         }
 
+        .pagina-enderas{
+            iframe{
+                min-width: 90%;
+            }
+        }
 
         //Querys company---
         .container-company {
@@ -329,6 +334,14 @@
             }
         }
 
+        //querys contacto
+        .container-contact{
+            .contacto{
+                .form{
+                    min-width: 100%;
+                }
+            }
+        }
     }
 
 }

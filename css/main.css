@@ -1020,7 +1020,7 @@ footer p {
 }
 .container-espectaculos .videos .videos-section1 .lambe:hover, .container-espectaculos .videos .videos-section1 .marioneta:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 5px 1px #eee;
+  box-shadow: 5px 5px 3px 2px #999;
 }
 .container-espectaculos .videos .videos-section1 .lambe a, .container-espectaculos .videos .videos-section1 .marioneta a {
   text-decoration: none;
@@ -1035,7 +1035,7 @@ footer p {
 }
 .container-espectaculos .videos .videos-section1 .marioneta:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 5px 1px #eee;
+  box-shadow: 5px 5px 3px 2px #999;
 }
 .container-espectaculos .videos .videos-section1 .marioneta a {
   text-decoration: none;
@@ -1161,14 +1161,14 @@ footer p {
 }
 
 .container-marionetas {
-  min-height: 600px;
+  min-height: 800px;
 }
 .container-marionetas h2 {
   display: inline-block;
   border-bottom: solid 1px #eee;
   margin-left: 10%;
-  margin-top: 40px;
-  margin-bottom: 80px;
+  margin-top: 60px;
+  margin-bottom: 100px;
 }
 .container-marionetas .images-marionetas {
   display: flex;
@@ -1180,7 +1180,7 @@ footer p {
   justify-content: space-evenly;
 }
 .container-marionetas .images-marionetas .card-marionetas {
-  max-width: 30%;
+  max-width: 25%;
   color: white;
   margin-bottom: 30px;
 }
@@ -1447,8 +1447,8 @@ footer p {
   body .container-taller .images-taller {
     min-width: 100%;
   }
-  body .container-taller .images-taller .foto-taller {
-    min-width: 35%;
+  body .container-taller .images-taller a {
+    min-width: 50% !important;
     margin-bottom: 15px;
   }
   body .taller3 .btn {
@@ -1524,7 +1524,7 @@ footer p {
     min-width: 100%;
   }
   body .container-taller .images-taller .foto-taller {
-    min-width: 45%;
+    min-width: 80% !important;
     margin-bottom: 15px;
   }
   body .container-inter .container-gallery-interneviones .gallery {
@@ -1538,12 +1538,18 @@ footer p {
   body .container-marionetas .images-marionetas .card-marionetas {
     min-width: 70%;
   }
+  body .pagina-enderas iframe {
+    min-width: 90%;
+  }
   body .container-company .logo-movil {
     min-width: 90%;
     margin: auto;
   }
   body .container-company .contactarme {
     min-width: 70%;
+  }
+  body .container-contact .contacto .form {
+    min-width: 100%;
   }
 }
 

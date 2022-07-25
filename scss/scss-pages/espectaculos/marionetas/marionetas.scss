@@ -1,13 +1,13 @@
 .container-marionetas {
     @extend .lambe-lambe;
-    min-height: 600px;
+    min-height: 800px;
 
     h2{
         display: inline-block;
         border-bottom: solid 1px #eee;
         margin-left: 10%;
-        margin-top: 40px;
-        margin-bottom: 80px;
+        margin-top: 60px;
+        margin-bottom: 100px;
     }
 
     .images-marionetas {
@@ -20,7 +20,7 @@
         justify-content: space-evenly;
 
         .card-marionetas {
-            max-width: 30%;
+            max-width: 25%;
             color: white;
             margin-bottom: 30px;
 
