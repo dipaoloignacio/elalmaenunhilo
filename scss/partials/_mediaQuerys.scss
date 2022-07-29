@@ -1,4 +1,15 @@
 /* -----MEDIA QUERY----- */
+@media screen and (min-width: 1918px) {
+    header {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    min-height: 500px !important;
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 1100px) {
 
@@ -260,8 +271,8 @@
 
     body {
         header {
-            .carousel-item{
-                img{
+            .carousel-item {
+                img {
                     width: 100%;
                 }
             }
@@ -292,14 +303,15 @@
         }
 
         //intervenciones querys.
-        .container-inter{
-            .container-gallery-interneviones{
-                .gallery{
+        .container-inter {
+            .container-gallery-interneviones {
+                .gallery {
                     display: flex;
                     flex-direction: column;
                     min-width: 80%;
                 }
             }
+
             .book {
                 transform: scale(0.8);
             }
@@ -315,8 +327,8 @@
             }
         }
 
-        .pagina-enderas{
-            iframe{
+        .pagina-enderas {
+            iframe {
                 min-width: 90%;
             }
         }
@@ -335,9 +347,9 @@
         }
 
         //querys contacto
-        .container-contact{
-            .contacto{
-                .form{
+        .container-contact {
+            .contacto {
+                .form {
                     min-width: 100%;
                 }
             }
