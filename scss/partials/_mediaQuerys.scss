@@ -42,7 +42,6 @@
             }
 
             .images-taller {
-                min-width: 100%;
                 gap: 50px;
                 margin-bottom: 0;
 
@@ -153,22 +152,31 @@
         // Querys TALLERES-----
         .container-taller {
             .video-taller {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                height: 500px;
+
                 iframe {
-                    width: 60%;
-                    height: 300px;
-                    margin-left: 20%;
+                    width: 100%;
+                    height: 400px;
+                    margin-left: 0;
                 }
             }
 
             .images-taller {
-                min-width: 100%;
+                width: 100%;
 
                 a {
-                    min-width: 50% !important;
+                    min-width: 45% !important;
                     margin-bottom: 15px;
                 }
             }
         }
+
+
+
 
         .taller3 {
             .btn {
@@ -285,10 +293,16 @@
         // Querys TALLERES-----
         .container-taller {
             .video-taller {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                height: 300px;
+
                 iframe {
-                    width: 80%;
+                    width: 100%;
                     height: 200px;
-                    margin-left: 10%;
+                    margin-left: 0;
                 }
             }
 

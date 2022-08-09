@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Secular+One&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .imgLoader {
@@ -621,7 +621,6 @@ body {
 
 .boton-nav {
   position: relative;
-  width: 130px;
   height: 40px;
   line-height: 42px;
   border: none;
@@ -629,7 +628,10 @@ body {
 }
 .boton-nav a {
   text-decoration: none;
+  padding: 0 20px;
   color: #111;
+  font-family: "Heebo", sans-serif;
+  font-size: 1.2rem;
 }
 .boton-nav:hover {
   background: transparent;
@@ -807,6 +809,7 @@ footer p {
 }
 .container-index .title-index h1 {
   display: inline-block;
+  font-family: "Secular One", sans-serif;
   color: #111;
   border-bottom: solid 1px #111;
   margin-bottom: 40px;
@@ -840,6 +843,7 @@ footer p {
 }
 .container-company .text-company h2 {
   display: inline-block;
+  font-family: "Secular One", sans-serif;
   margin-top: 30px;
   margin-bottom: 20px;
   padding-bottom: 5px;
@@ -863,29 +867,29 @@ footer p {
   border-radius: 20px;
   width: 70px;
   height: 240px;
-  background-image: url("../../images/Sin título.png");
+  background-image: url("../../images/logo_mobile.png");
   animation: anime 4s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
 }
 @keyframes anime {
   0% {
     width: 70px;
     height: 240px;
-    background-image: url("../../images/Sin título.png");
+    background-image: url("../../images/logo_mobile.png");
   }
   25% {
     width: 70px;
     height: 240px;
-    background-image: url("../../images/Sin título.png");
+    background-image: url("../../images/logo_mobile.png");
   }
   50% {
     width: 70px;
     height: 240px;
-    background-image: url("../../images/Sin título.png");
+    background-image: url("../../images/logo_mobile.png");
   }
   100% {
     width: 400px;
     height: 240px;
-    background-image: url("../../images/Sin título.png");
+    background-image: url("../../images/logo_mobile.png");
   }
 }
 .container-company .contactarme {
@@ -905,9 +909,10 @@ footer p {
 }
 .container-contact .tittle-contact {
   display: inline-block;
+  font-family: "Secular One", sans-serif;
   font-weight: 400;
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   padding-bottom: 5px;
   border-bottom: solid 1px #111;
 }
@@ -923,14 +928,24 @@ footer p {
 .container-contact .contacto .form #name {
   margin-top: 10px;
   width: 70%;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px #777;
 }
 .container-contact .contacto .form #mail {
   margin-top: 10px;
   width: 70%;
+  height: 35px;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px #777;
 }
 .container-contact .contacto .form #message {
   margin-top: 10px;
   width: 70%;
+  height: 100px;
+  border-radius: 5px;
+  border: solid 1px #777;
 }
 .container-contact .contacto .form #send {
   width: 100px;
@@ -939,6 +954,7 @@ footer p {
   color: white;
   background-color: #444;
   margin-bottom: 40px;
+  border: none;
 }
 .container-contact .contacto .form #send:hover {
   background-color: #333;
@@ -980,6 +996,7 @@ footer p {
 }
 .container-espectaculos h1 {
   display: inline-block;
+  font-family: "Secular One", sans-serif;
   padding-top: 80px;
   padding-bottom: 6px;
   margin-left: 10%;
@@ -1234,7 +1251,7 @@ footer p {
   margin-top: 50px;
 }
 .pagina-enderas p {
-  max-width: 80%;
+  max-width: 50%;
   margin: 20px auto;
 }
 .pagina-enderas .lista-creditos {
@@ -1257,7 +1274,7 @@ footer p {
   border: solid 1px #eee;
   padding: 5px;
   width: 50%;
-  height: 300px;
+  height: 400px;
   margin: 50px auto;
 }
 .pagina-enderas h4 {
@@ -1282,6 +1299,7 @@ footer p {
 }
 .container-taller h1 {
   display: inline-block;
+  font-family: "Secular One", sans-serif;
   margin-left: 10%;
   color: #111;
   max-width: auto;
@@ -1290,19 +1308,22 @@ footer p {
   padding-bottom: 5px;
 }
 .container-taller .video-taller {
-  display: inline-block;
-  width: 80%;
-  margin-left: 10%;
-  padding-top: 120px;
-  border-top: solid 1px #111;
+  background-color: #333;
+  padding: 100px;
+  width: 100%;
 }
 .container-taller .video-taller iframe {
-  width: 80%;
-  height: 400px;
-  margin-left: 10%;
-  margin-bottom: 50px;
+  width: 70%;
+  height: 500px;
+  margin-left: 15%;
   padding: 5px;
-  border: solid 1px #111;
+  border: solid 1px #eee;
+}
+.container-taller .divicion {
+  width: 80%;
+  height: 1px;
+  background-color: #111;
+  margin: 100px auto;
 }
 .container-taller .images-taller {
   display: flex;
@@ -1385,7 +1406,6 @@ footer p {
     margin-left: 20%;
   }
   body .container-taller .images-taller {
-    min-width: 100%;
     gap: 50px;
     margin-bottom: 0;
   }
@@ -1444,16 +1464,23 @@ footer p {
   body .container-index section p {
     font-size: 15px;
   }
+  body .container-taller .video-taller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 500px;
+  }
   body .container-taller .video-taller iframe {
-    width: 60%;
-    height: 300px;
-    margin-left: 20%;
+    width: 100%;
+    height: 400px;
+    margin-left: 0;
   }
   body .container-taller .images-taller {
-    min-width: 100%;
+    width: 100%;
   }
   body .container-taller .images-taller a {
-    min-width: 50% !important;
+    min-width: 45% !important;
     margin-bottom: 15px;
   }
   body .taller3 .btn {
@@ -1520,10 +1547,17 @@ footer p {
   body #img-logo {
     min-height: 200px;
   }
+  body .container-taller .video-taller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 300px;
+  }
   body .container-taller .video-taller iframe {
-    width: 80%;
+    width: 100%;
     height: 200px;
-    margin-left: 10%;
+    margin-left: 0;
   }
   body .container-taller .images-taller {
     min-width: 100%;

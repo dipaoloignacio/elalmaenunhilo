@@ -9,6 +9,7 @@
 
     h1 {
         display: inline-block;
+        font-family: 'Secular One', sans-serif;
         margin-left: 10%;
         color: $color-text;
         max-width: auto;
@@ -18,19 +19,23 @@
     }
 
     .video-taller {
-        display: inline-block;
-        width: 80%;
-        margin-left: 10%;
-        padding-top: 120px;
-        border-top: solid 1px #111;
+        background-color: #333;
+        padding: 100px;
+        width: 100%;
         iframe {
-            width: 80%;
-            height: 400px;
-            margin-left: 10%;
-            margin-bottom: 50px;
+            width: 70%;
+            height: 500px;
+            margin-left: 15%;
             padding: 5px;
-            border: solid 1px #111;
+            border: solid 1px #eee;
         }
+    }
+
+    .divicion{
+        width: 80%;
+        height: 1px;
+        background-color: #111;
+        margin: 100px auto;
     }
 
     .images-taller {
