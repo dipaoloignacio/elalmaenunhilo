@@ -2,9 +2,9 @@
     @extend .lambe-lambe;
     min-height: 800px;
 
-    h2{
+    h2 {
         display: inline-block;
-        border-bottom: solid 1px #eee;
+        border-bottom: solid 1px #111;
         margin-left: 10%;
         margin-top: 60px;
         margin-bottom: 100px;
@@ -23,10 +23,12 @@
             max-width: 25%;
             color: white;
             margin-bottom: 30px;
+            border: solid 1px #222;
+            padding: 2px;
 
             .btn {
                 font-size: 1rem;
-                margin-bottom: 5px;
+                margin: 5px 0;
             }
 
             a {
@@ -35,36 +37,15 @@
                 .btn:hover {
                     color: black !important;
                 }
-
-                &:hover {
-                    img {
-                        transition: 0.3s;
-                        transform: scale(1.02);
-                        box-shadow: 0 0 6px 2px white;
-                    }
-                }
             }
 
-            h4 {
-                text-align: center;
-                margin: 20px;
+            &:hover {
+                transition: 0.3s;
+                transform: scale(1.02);
+                box-shadow: 5px 5px 3px 2px #999;
             }
-
-            .lista-creditos {
-                padding: 0;
-                list-style: none;
-                text-align: center;
-
-                li {
-                    margin-bottom: 10px;
-                }
-            }
-
         }
-
-
     }
-
 }
 
 //Estilos pagina espectaculos/marionetas/enderas

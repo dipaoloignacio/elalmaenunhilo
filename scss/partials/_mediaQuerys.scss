@@ -332,6 +332,15 @@
         }
 
         //query Espectaculos
+        .container-espectaculos{
+            .videos{
+                .videos-section1{
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
         // url espectaculos/marionetas/marionetas.
         .container-marionetas {
             .images-marionetas {
